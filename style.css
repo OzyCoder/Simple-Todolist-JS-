@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Patua+One&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&family=Patua+One&family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form {
+  flex: 50%;
+  padding: 40px;
+}
+.form h1 {
+  margin-bottom: 40px;
+  margin-left: 20px;
+  font-size: 45px;
+  line-height: 50px;
+  color: #009dae;
+  font-family: "Righteous", cursive;
+}
+
+.form input,
+.form button {
+  height: 35px;
+  border-radius: 3px;
+}
+.form input {
+  width: 50%;
+  border: 1px solid;
+  padding: 5px;
+  margin-left: 20px;
+}
+.form button {
+  width: 20%;
+  background-color: #009dae;
+  border: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.form button:hover {
+  opacity: 80%;
+}
+
+/* right side style */
+.output-side {
+  flex: 40%;
+  background-color: #009dae;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 40px;
+  font-family: "Patua One", cursive;
+  color: #007dae;
+}
+.output-container {
+  overflow: auto;
+  width: auto;
+  height: 530px;
+  margin: 20px 10px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: -10px -10px lightblue;
+  border: none;
+}
+#todolist li {
+  list-style: none;
+  text-align: start;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: lightblue;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Baloo 2", cursive;
+  color: #007dae;
+}
+#todolist li a {
+  font-size: 20px;
+  color: #009dae;
+  margin-right: 8px;
+  float: right;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    overflow: scroll;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .form h1 {
+    font-size: 35px;
+  }
+  .output-side {
+    font-size: 25px;
+  }
+}
